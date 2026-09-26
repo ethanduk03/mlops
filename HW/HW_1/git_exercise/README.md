@@ -1,0 +1,5 @@
+The first model I created was a simple linear regression with one predictor. The sampregdata dataset had four candidate predictors to choose from, x1-x4. After fitting a model to predict y based on each of the four x_i, I determined that x4 was the best predictor due to it resulting in the largest R-squared value. This means that it was the most highly correlated variable with y, what I was trying to predict.
+
+The second model I created was a multiple linear regression with two predictors. This time, I fit a model for each possible pair of predictors x_i and x_j (with i != j), again looking for the largest R-squared value. I determined that x3 and x4 were the best two predictors for this model.
+
+Comparing the two models, it is easy to see the benefit of including a second predictor. The first model had a measly R-squared value of 0.275, but the second model had an R-squared value of 0.530, almost twice as much. This means the predictors' correlation with y was twice as strong.

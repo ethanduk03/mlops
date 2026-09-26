@@ -28,6 +28,6 @@ best_X = df[[best_xs[0], best_xs[1]]]
 best_model = LinearRegression()
 best_model.fit(best_X, y)
 
-print(f"Best predictor: {best_xs}")
+print(f"Best predictor: {best_xs}, R^2 = {scores[best_xs]}")
 print(f"Intercept: {best_model.intercept_}")
 print(f"Coefficient: {best_model.coef_}")

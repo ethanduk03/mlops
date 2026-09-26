@@ -24,6 +24,6 @@ best_x = max(scores, key = scores.get)
 best_model = LinearRegression()
 best_model.fit(df[[best_x]], y)
 
-print(f"Best predictor: {best_x}")
+print(f"Best predictor: {best_x}, R^2 = {scores[best_x]}")
 print(f"Intercept: {best_model.intercept_}")
 print(f"Coefficient: {best_model.coef_}")
